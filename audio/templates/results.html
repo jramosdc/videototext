@@ -1,0 +1,24 @@
+{% extends "input.html" %}
+
+{% block results %}
+  <div class="col-sm-offset-4 col-sm-4" id="loading">
+  </div>
+
+  <div class="col-sm-offset-4 col-sm-4" id="result">
+    <div id="progress">
+      <p>Descargando el video desde los servidores de YouTube...</p>
+    </div>
+
+    <div id="player">
+    </div>
+
+    <div id="transcript">
+    </div>
+  </div>
+{% endblock %}
+
+{% block javascript %}
+  {{ super() }}
+
+  <script type="text/javascript" src="{{ url_for('static', filename = 'js/ajax.js') }}"></script>
+{% endblock %}

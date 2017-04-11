@@ -1,0 +1,11 @@
+# Python bytecode
+*.py[co]
+
+# Virtualenv
+.venv/
+
+# Instance's config
+instance/
+
+# Temporary files directory
+temp/
